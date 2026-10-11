@@ -1,767 +1,843 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Muhammad Sengaji Aswar, S.E. | HR Officer Pertambangan Nikel</title>
-  <meta name="description" content="Portofolio HR Officer: payroll, recruitment, HR administration. Pengalaman di pertambangan nikel, berdomisili di Morowali.">
-  <style>
-    :root {
-      --bg:#f5f7fb;
-      --panel:#ffffff;
-      --panel-2:#f3f7ff;
-      --ink:#122033;
-      --muted:#5b6c80;
-      --line:#dde5f0;
-      --primary:#173a68;
-      --primary-2:#2f5d9d;
-      --highlight:#dfeafc;
-      --shadow:0 18px 45px rgba(17,35,60,.08);
-      --radius:18px;
-      --success:#127c53;
-      --danger:#a13434;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Muhammad Sengaji Aswar | HR Officer Portfolio</title>
+    <meta
+      name="description"
+      content="Portofolio Muhammad Sengaji Aswar, HR Officer dengan spesialisasi payroll, recruitment, dan administrasi HR di industri pertambangan nikel."
+    />
+    <style>
+      :root {
+        --bg: #f3f7ff;
+        --panel: rgba(255,255,255,0.9);
+        --panel-strong: #ffffff;
+        --ink: #122033;
+        --muted: #58708d;
+        --line: #dfe9f5;
+        --primary: #153a68;
+        --primary-2: #2f5d9d;
+        --soft: #edf4ff;
+        --success: #107c55;
+        --shadow: 0 18px 45px rgba(17,35,60,0.08);
+        --radius: 22px;
+      }
 
-    * { box-sizing:border-box }
-    html { scroll-behavior:smooth }
-    body {
-      margin:0;
-      background:linear-gradient(180deg,#f5f7fb 0%,#edf3fb 100%);
-      color:var(--ink);
-      font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    }
-    a { color:inherit }
-    img { max-width:100%; display:block }
-    .wrap {
-      max-width:980px;
-      margin:0 auto;
-      padding:0 20px;
-    }
-    .topbar {
-      position:sticky;
-      top:0;
-      z-index:40;
-      backdrop-filter:saturate(1.2) blur(8px);
-      background:rgba(245,247,251,.82);
-      border-bottom:1px solid var(--line);
-    }
-    .topbar .wrap {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding-top:12px;
-      padding-bottom:12px;
-    }
-    .brand {
-      font-size:.92rem;
-      font-weight:800;
-      letter-spacing:.06em;
-      text-transform:uppercase;
-      color:var(--primary);
-    }
-    .nav {
-      display:flex;
-      gap:18px;
-      overflow-x:auto;
-      white-space:nowrap;
-      padding-bottom:2px;
-    }
-    .nav a {
-      color:var(--muted);
-      text-decoration:none;
-      font-weight:600;
-      font-size:.9rem;
-    }
-    .nav a:hover { color:var(--primary) }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(63, 104, 181, 0.12), transparent 30%),
+          linear-gradient(180deg, #f5f8ff 0%, #edf3fb 100%);
+        line-height: 1.6;
+      }
 
-    .hero {
-      padding:46px 0 28px;
-    }
-    .hero-inner {
-      display:grid;
-      grid-template-columns:1.5fr .8fr;
-      gap:28px;
-      align-items:center;
-    }
-    .eyebrow {
-      display:inline-block;
-      background:var(--highlight);
-      color:var(--primary-2);
-      font-size:.76rem;
-      font-weight:700;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid #d3e0fd;
-    }
-    h1 {
-      margin:.7rem 0 .5rem;
-      font-size:clamp(2.1rem,5vw,4rem);
-      line-height:1.08;
-      letter-spacing:-.05em;
-      color:var(--primary);
-    }
-    .lead {
-      font-size:1.06rem;
-      color:var(--muted);
-      max-width:62ch;
-      margin:0 0 22px;
-    }
-    .btn-group {
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:8px;
-    }
-    .btn {
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      border-radius:12px;
-      padding:12px 16px;
-      font-weight:700;
-      text-decoration:none;
-      border:1px solid var(--primary);
-      transition:.2s ease;
-      cursor:pointer;
-    }
-    .btn.primary {
-      background:var(--primary);
-      color:#fff;
-      box-shadow:0 12px 24px rgba(23,58,104,.18);
-    }
-    .btn.primary:hover { background:#102c52 }
-    .btn.secondary {
-      background:transparent;
-      color:var(--primary);
-    }
-    .btn.secondary:hover { background:#edf3ff }
+      img { display: block; max-width: 100%; }
+      a { color: inherit; }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
 
-    .hero-card {
-      background:linear-gradient(180deg,#fff 0%,#f3f7ff 100%);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px;
-    }
-    .mini-tag {
-      display:inline-block;
-      font-size:.72rem;
-      font-weight:700;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:var(--primary-2);
-      background:#eef5ff;
-      border:1px solid #d5e1ff;
-      border-radius:999px;
-      padding:7px 10px;
-    }
-    .fact-list {
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0, 1fr));
-      gap:12px;
-      margin-top:18px;
-    }
-    .fact {
-      padding:14px 12px;
-      border-radius:12px;
-      background:var(--panel);
-      border:1px solid var(--line);
-    }
-    .fact strong {
-      display:block;
-      font-size:1.6rem;
-      line-height:1.1;
-      color:var(--primary);
-      margin-bottom:4px;
-    }
-    .fact span {
-      color:var(--muted);
-      font-size:.82rem;
-    }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: blur(14px);
+        background: rgba(243,247,255,0.8);
+        border-bottom: 1px solid rgba(159, 180, 213, 0.35);
+      }
 
-    section {
-      padding:18px 0 16px;
-    }
-    .section-head {
-      margin:0 0 16px;
-      padding-bottom:8px;
-      border-bottom:2px solid var(--line);
-    }
-    .section-head h2 {
-      margin:0;
-      color:var(--primary);
-      font-size:1.5rem;
-    }
-    .stats-grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:14px;
-    }
-    .stat-card {
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:18px 18px 16px;
-      box-shadow:0 10px 20px rgba(18,32,51,.02);
-    }
-    .stat-card b {
-      display:block;
-      font-size:2rem;
-      line-height:1.1;
-      color:var(--primary);
-      margin-bottom:4px;
-    }
-    .stat-card span {
-      color:var(--muted);
-      font-size:.88rem;
-    }
+      .topbar .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
 
-    .card {
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:20px 20px 18px;
-      margin-bottom:14px;
-      box-shadow:0 10px 22px rgba(18,32,51,.02);
-    }
-    .card h3 {
-      margin:0 0 6px;
-      font-size:1.2rem;
-      color:var(--ink);
-    }
-    .meta {
-      margin:0 0 14px;
-      color:var(--muted);
-      font-size:.9rem;
-    }
-    .two-col {
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:16px;
-    }
-    dl {
-      margin:0;
-      display:grid;
-      grid-template-columns:100px 1fr;
-      gap:8px 16px;
-    }
-    dt {
-      font-weight:800;
-      color:var(--primary-2);
-      font-size:.88rem;
-    }
-    dd {
-      margin:0;
-      color:var(--ink);
-    }
-    .tag-list {
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:4px;
-    }
-    .tag {
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      background:var(--panel-2);
-      color:var(--primary);
-      border:1px solid #dfeafc;
-      font-size:.8rem;
-      font-weight:600;
-    }
+      .brand {
+        font-size: 0.9rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: var(--primary);
+      }
 
-    .timeline {
-      padding-left:18px;
-      border-left:3px solid var(--line);
-      margin-left:6px;
-    }
-    .timeline-item {
-      position:relative;
-      margin:0 0 22px;
-      padding-left:18px;
-    }
-    .timeline-item::before {
-      content:"";
-      position:absolute;
-      left:-24px;
-      top:7px;
-      width:11px;
-      height:11px;
-      background:var(--primary-2);
-      border-radius:50%;
-      border:2px solid #fff;
-      box-shadow:0 0 0 2px #dfeafc;
-    }
-    .timeline-item h3 {
-      margin:0 0 4px;
-      font-size:1.06rem;
-    }
-    .timeline-item .when {
-      color:var(--muted);
-      font-size:.88rem;
-      margin-bottom:8px;
-    }
-    .timeline-item ul {
-      margin:0;
-      padding-left:18px;
-      color:var(--ink);
-    }
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
 
-    .skill-group {
-      margin-bottom:18px;
-    }
-    .skill-group b {
-      display:block;
-      margin-bottom:8px;
-      color:var(--primary);
-      font-size:1rem;
-    }
+      .nav a {
+        text-decoration: none;
+        color: var(--muted);
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: color 0.2s ease;
+      }
 
-    .certs {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:14px;
-      margin-top:12px;
-    }
-    .cert {
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      overflow:hidden;
-      box-shadow:0 10px 20px rgba(18,32,51,.02);
-    }
-    .cert button {
-      display:block;
-      width:100%;
-      padding:0;
-      border:none;
-      cursor:zoom-in;
-      background:linear-gradient(135deg,#eef5ff,#f7faff);
-    }
-    .cert img {
-      width:100%;
-      height:auto;
-      aspect-ratio:4/3;
-      object-fit:cover;
-    }
-    .cert figcaption {
-      padding:12px 12px 14px;
-    }
-    .cert figcaption b {
-      display:block;
-      margin-bottom:6px;
-      color:var(--ink);
-    }
-    .cert figcaption span,
-    .cert figcaption em {
-      display:block;
-      color:var(--muted);
-      font-size:.82rem;
-      font-style:normal;
-      line-height:1.5;
-    }
-    .cert figcaption em {
-      color:var(--primary-2);
-      margin-top:4px;
-    }
+      .nav a:hover { color: var(--primary); }
 
-    .cta-box {
-      background:linear-gradient(135deg,#152f4f 0%,#234d82 100%);
-      border-radius:var(--radius);
-      color:#ebf3ff;
-      padding:22px 20px;
-      margin-top:12px;
-    }
-    .cta-box h3 {
-      margin:0 0 8px;
-      color:#fff;
-      font-size:1.2rem;
-    }
-    .cta-box p {
-      margin:0 0 14px;
-      color:rgba(235,243,255,.9);
-    }
+      .hero {
+        padding: 72px 0 38px;
+      }
 
-    .footer {
-      padding:26px 0 52px;
-      color:var(--muted);
-      font-size:.9rem;
-    }
-    .light { color:var(--muted) }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.45fr 0.9fr;
+        gap: 28px;
+        align-items: center;
+      }
 
-    #lightbox {
-      position:fixed;
-      inset:0;
-      display:none;
-      place-items:center;
-      background:rgba(6,10,16,.8);
-      z-index:80;
-      padding:22px;
-      cursor:zoom-out;
-    }
-    #lightbox.show { display:grid }
-    #lightbox img {
-      max-width:min(90vw, 980px);
-      max-height:88vh;
-      border-radius:12px;
-      box-shadow:0 24px 60px rgba(0,0,0,.32);
-      background:#fff;
-    }
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid #d8e6ff;
+        background: #eef5ff;
+        color: var(--primary-2);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+        font-weight: 800;
+      }
 
-    @media (max-width:780px) {
-      .hero-inner, .two-col { grid-template-columns:1fr }
-      .topbar .wrap { align-items:flex-start; flex-direction:column }
-      .nav { width:100% }
-    }
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(2.4rem, 5vw, 4.4rem);
+        letter-spacing: -0.06em;
+        line-height: 1.04;
+        color: var(--primary);
+      }
 
-    @media (max-width:520px) {
-      dl { grid-template-columns:1fr }
-      dt { margin-top:6px }
-      .fact-list { grid-template-columns:1fr }
-      h1 { letter-spacing:-.04em }
-    }
-  </style>
-</head>
-<body>
-  <div class="topbar">
-    <div class="wrap">
-      <div class="brand">M. Sengaji Aswar</div>
-      <nav class="nav" aria-label="Navigasi utama">
-        <a href="#angka">Angka</a>
-        <a href="#kasus">Studi Kasus</a>
-        <a href="#pengalaman">Pengalaman</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#sertifikasi">Sertifikasi</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </div>
-  </div>
+      .lead {
+        max-width: 62ch;
+        margin: 0;
+        font-size: 1.08rem;
+        color: var(--muted);
+      }
 
-  <header class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <span class="eyebrow">HR Officer | Pertambangan Nikel</span>
-        <h1>Muhammad Sengaji Aswar, S.E.</h1>
-        <p class="lead">Lebih dari 2 tahun mengelola payroll, rekrutmen, dan administrasi HR di industri pertambangan, termasuk penempatan di PT ANTAM Tbk, Unit Bisnis Pertambangan Nikel (UBPN) Sulawesi Tenggara. Berdomisili di Kabupaten Morowali, Sulawesi Tengah.</p>
-        <div class="btn-group">
-          <a class="btn primary" href="CV_Muhammad_Sengaji_Aswar.pdf" download="CV_Muhammad_Sengaji_Aswar.pdf" target="_blank" rel="noopener">Unduh CV (PDF)</a>
-          <a class="btn secondary" href="https://wa.me/6281342307699" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn secondary" href="mailto:muhammadsengaji.a@gmail.com">Email</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/muhammad-sengaji-aswar" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 17px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 800;
+        border: 1px solid transparent;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn.primary {
+        background: linear-gradient(135deg, var(--primary) 0%, #214f86 100%);
+        color: white;
+        box-shadow: 0 14px 26px rgba(21,58,104,0.18);
+      }
+
+      .btn.secondary {
+        background: rgba(255,255,255,0.7);
+        color: var(--primary);
+        border-color: var(--line);
+      }
+
+      .hero-card {
+        background: linear-gradient(180deg, #fff 0%, #f3f7ff 100%);
+        border: 1px solid rgba(185, 205, 236, 0.8);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 22px;
+      }
+
+      .mini-tag {
+        display: inline-block;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: #edf5ff;
+        border: 1px solid #d7e6ff;
+        color: var(--primary-2);
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .fact-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .fact {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: white;
+        padding: 16px 14px;
+      }
+
+      .fact strong {
+        display: block;
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        line-height: 1.1;
+        color: var(--primary);
+        margin-bottom: 4px;
+      }
+
+      .fact span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      main { padding-bottom: 18px; }
+
+      section {
+        padding: 26px 0 12px;
+      }
+
+      .section-head {
+        margin-bottom: 18px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--line);
+      }
+
+      .section-head h2 {
+        margin: 0;
+        color: var(--primary);
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        letter-spacing: -0.04em;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 16px;
+      }
+
+      .stat-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px 18px 18px;
+        box-shadow: 0 10px 24px rgba(18,32,51,0.02);
+      }
+
+      .stat-card b {
+        display: block;
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+        line-height: 1.12;
+        color: var(--primary);
+        margin-bottom: 5px;
+      }
+
+      .stat-card span {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: 0 14px 28px rgba(18,32,51,0.02);
+        padding: 22px 22px 18px;
+        margin-bottom: 18px;
+      }
+
+      .card h3 {
+        margin: 0 0 6px;
+        font-size: 1.22rem;
+        color: var(--ink);
+      }
+
+      .meta {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 18px;
+        align-items: start;
+      }
+
+      dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 10px 16px;
+      }
+
+      dt {
+        color: var(--primary-2);
+        font-weight: 800;
+        font-size: 0.82rem;
+        letter-spacing: 0.02em;
+      }
+
+      dd {
+        margin: 0;
+        color: var(--ink);
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        background: var(--soft);
+        border: 1px solid #dfeafc;
+        color: var(--primary);
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 7px 10px;
+      }
+
+      .timeline {
+        padding-left: 18px;
+        border-left: 3px solid var(--line);
+        margin-left: 6px;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 24px;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--primary-2);
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 2px #dfeafc;
+      }
+
+      .timeline-item h3 {
+        margin: 0 0 4px;
+        font-size: 1.08rem;
+        color: var(--ink);
+      }
+
+      .when {
+        color: var(--muted);
+        font-size: 0.88rem;
+        margin-bottom: 8px;
+      }
+
+      .timeline-item ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--ink);
+      }
+
+      .skill-group {
+        margin-bottom: 18px;
+      }
+
+      .skill-group b {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--primary);
+        font-size: 1rem;
+      }
+
+      .certs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 12px;
+      }
+
+      .cert {
+        background: var(--panel-strong);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px 24px rgba(18,32,51,0.02);
+      }
+
+      .cert button {
+        width: 100%;
+        display: block;
+        border: none;
+        background: linear-gradient(135deg, #eef5ff 0%, #f9fbff 100%);
+        padding: 0;
+        cursor: zoom-in;
+      }
+
+      .cert img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      .cert figcaption {
+        padding: 12px 12px 14px;
+      }
+
+      .cert figcaption b {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--ink);
+      }
+
+      .cert figcaption span,
+      .cert figcaption em {
+        display: block;
+        font-style: normal;
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .cert figcaption em {
+        color: var(--primary-2);
+        margin-top: 4px;
+      }
+
+      .cta-box {
+        background: linear-gradient(135deg, #17345a 0%, #224d82 100%);
+        color: #ebf3ff;
+        border-radius: var(--radius);
+        padding: 22px 20px;
+        margin-top: 16px;
+      }
+
+      .cta-box h3 {
+        margin: 0 0 8px;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      .cta-box p {
+        margin: 0 0 14px;
+        color: rgba(235,243,255,0.9);
+      }
+
+      .footer {
+        padding: 26px 0 52px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .light {
+        color: var(--muted);
+      }
+
+      #lightbox {
+        position: fixed;
+        inset: 0;
+        display: none;
+        place-items: center;
+        padding: 22px;
+        background: rgba(6,10,16,0.8);
+        z-index: 80;
+        cursor: zoom-out;
+      }
+
+      #lightbox.show { display: grid; }
+
+      #lightbox img {
+        max-width: min(92vw, 980px);
+        max-height: 88vh;
+        border-radius: 12px;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.32);
+        background: white;
+      }
+
+      @media (max-width: 860px) {
+        .hero-inner,
+        .two-col { grid-template-columns: 1fr; }
+        .topbar .wrap {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .nav { width: 100%; }
+      }
+
+      @media (max-width: 560px) {
+        dl { grid-template-columns: 1fr; }
+        .fact-list { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="wrap">
+        <div class="brand">M. Sengaji Aswar</div>
+        <nav class="nav" aria-label="Navigasi utama">
+          <a href="#angka">Angka</a>
+          <a href="#kasus">Studi Kasus</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#sertifikasi">Sertifikasi</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
       </div>
+    </div>
 
-      <aside class="hero-card" aria-label="Informasi ringkas">
-        <span class="mini-tag">Profil Singkat</span>
-        <div class="fact-list">
-          <div class="fact">
-            <strong>133</strong>
-            <span>karyawan dikelola payroll</span>
-          </div>
-          <div class="fact">
-            <strong>21 → 14</strong>
-            <span>hari time-to-hire</span>
-          </div>
-          <div class="fact">
-            <strong>50%</strong>
-            <span>efisiensi payroll</span>
-          </div>
-          <div class="fact">
-            <strong>20–50</strong>
-            <span>kandidat disaring/minggu</span>
+    <header class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <span class="eyebrow">HR Officer | Pertambangan Nikel</span>
+          <h1>Muhammad Sengaji Aswar, S.E.</h1>
+          <p class="lead">
+            Lebih dari 2 tahun mengelola payroll, rekrutmen, dan administrasi HR di industri pertambangan,
+            termasuk penempatan di PT ANTAM Tbk, Unit Bisnis Pertambangan Nikel (UBPN) Sulawesi Tenggara.
+            Saya fokus pada efisiensi operasional HR, validasi data, serta mendukung kebutuhan bisnis melalui
+            sistem yang rapi dan proses yang terukur.
+          </p>
+          <div class="btn-group">
+            <a class="btn primary" href="CV_Muhammad_Sengaji_Aswar.pdf" target="_blank" rel="noopener">Unduh CV (PDF)</a>
+            <a class="btn secondary" href="https://wa.me/6281342307699" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn secondary" href="mailto:muhammadsengaji.a@gmail.com">Email</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/muhammad-sengaji-aswar" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
-      </aside>
-    </div>
-  </header>
 
-  <nav aria-label="Navigasi bagian" style="display:none"></nav>
-
-  <main class="wrap">
-    <section id="angka">
-      <div class="section-head"><h2>Hasil dalam Angka</h2></div>
-      <div class="stats-grid">
-        <div class="stat-card"><b>133</b><span>karyawan dikelola payroll dan administrasinya</span></div>
-        <div class="stat-card"><b>21 → 14</b><span>hari time-to-hire (turun 33%)</span></div>
-        <div class="stat-card"><b>50%</b><span>peningkatan efisiensi proses payroll</span></div>
-        <div class="stat-card"><b>20-50</b><span>kandidat disaring per minggu</span></div>
+        <aside class="hero-card" aria-label="Informasi ringkas">
+          <span class="mini-tag">Profil Singkat</span>
+          <div class="fact-list">
+            <div class="fact">
+              <strong>133</strong>
+              <span>karyawan dikelola payroll</span>
+            </div>
+            <div class="fact">
+              <strong>21 → 14</strong>
+              <span>hari time-to-hire</span>
+            </div>
+            <div class="fact">
+              <strong>50%</strong>
+              <span>efisiensi payroll</span>
+            </div>
+            <div class="fact">
+              <strong>20–50</strong>
+              <span>kandidat disaring/minggu</span>
+            </div>
+          </div>
+        </aside>
       </div>
-    </section>
+    </header>
 
-    <section id="kasus">
-      <div class="section-head"><h2>Studi Kasus</h2></div>
+    <main class="wrap">
+      <section id="angka">
+        <div class="section-head">
+          <h2>Hasil dalam Angka</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><b>133</b><span>karyawan dikelola payroll dan administrasinya</span></div>
+          <div class="stat-card"><b>21 → 14</b><span>hari time-to-hire (turun 33%)</span></div>
+          <div class="stat-card"><b>50%</b><span>peningkatan efisiensi proses payroll</span></div>
+          <div class="stat-card"><b>20-50</b><span>kandidat disaring per minggu</span></div>
+        </div>
+      </section>
 
-      <article class="card">
-        <h3>1. Payroll 133 karyawan di lingkungan tambang nikel</h3>
-        <p class="meta">PT Andalan Berjaya Nusantara | Penempatan PT ANTAM Tbk, UBPN Sulawesi Tenggara | Jan 2024 - Agu 2025</p>
-        <div class="two-col">
-          <dl>
-            <dt>Konteks</dt><dd>Mengelola payroll 133 karyawan: gaji, lembur, BPJS, dan THR.</dd>
-            <dt>Tindakan</dt><dd>Memvalidasi data absensi sebagai dasar perhitungan, menyusun laporan HR bulanan, dan membangun sistem payroll berbasis Excel.</dd>
-            <dt>Hasil</dt><dd>Efisiensi proses payroll meningkat hingga 50%.</dd>
-          </dl>
-          <div>
+      <section id="kasus">
+        <div class="section-head"><h2>Studi Kasus</h2></div>
+
+        <article class="card">
+          <h3>1. Payroll 133 karyawan di lingkungan tambang nikel</h3>
+          <p class="meta">PT Andalan Berjaya Nusantara | Penempatan PT ANTAM Tbk, UBPN Sulawesi Tenggara | Jan 2024 - Agu 2025</p>
+          <div class="two-col">
+            <dl>
+              <dt>Konteks</dt><dd>Mengelola payroll 133 karyawan: gaji, lembur, BPJS, dan THR.</dd>
+              <dt>Tindakan</dt><dd>Memvalidasi data absensi sebagai dasar perhitungan, menyusun laporan HR bulanan, dan membangun sistem payroll berbasis Excel.</dd>
+              <dt>Hasil</dt><dd>Efisiensi proses payroll meningkat hingga 50%.</dd>
+            </dl>
             <div class="tag-list">
               <span class="tag">Microsoft Excel</span>
-              <span class="tag">Attendance Management</span>
+              <span class="tag">Attendance</span>
               <span class="tag">HR Reporting</span>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="card">
-        <h3>2. Time-to-hire turun dari 21 menjadi 14 hari</h3>
-        <p class="meta">PT Irena Binajasa Abadikarya | Admin Recruitment (project-based) | Des 2025 - Feb 2026</p>
-        <div class="two-col">
-          <dl>
-            <dt>Konteks</dt><dd>Rekrutmen end-to-end sesuai manpower planning, dengan koordinasi user terkait kebutuhan pekerjaan.</dd>
-            <dt>Tindakan</dt><dd>Menyaring 20-50 kandidat per minggu, mengelola database kandidat dan recruitment tracker, serta mengoptimalkan proses dari sourcing sampai onboarding.</dd>
-            <dt>Hasil</dt><dd>Time-to-hire turun 33%, dari 21 hari menjadi 14 hari.</dd>
-          </dl>
-          <div>
+        <article class="card">
+          <h3>2. Time-to-hire turun dari 21 menjadi 14 hari</h3>
+          <p class="meta">PT Irena Binajasa Abadikarya | Admin Recruitment (project-based) | Des 2025 - Feb 2026</p>
+          <div class="two-col">
+            <dl>
+              <dt>Konteks</dt><dd>Rekrutmen end-to-end sesuai manpower planning, dengan koordinasi user terkait kebutuhan pekerjaan.</dd>
+              <dt>Tindakan</dt><dd>Menyaring 20-50 kandidat per minggu, mengelola database kandidat dan recruitment tracker, serta mengoptimalkan proses dari sourcing sampai onboarding.</dd>
+              <dt>Hasil</dt><dd>Time-to-hire turun 33%, dari 21 hari menjadi 14 hari.</dd>
+            </dl>
             <div class="tag-list">
-              <span class="tag">Recruitment Tracking</span>
-              <span class="tag">Pipeline Reporting</span>
+              <span class="tag">Recruitment</span>
+              <span class="tag">Pipeline</span>
+              <span class="tag">Selection</span>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="card">
-        <h3>3. Rekonsiliasi data produksi hauling untuk payroll dan laporan</h3>
-        <p class="meta">PT Bintang Multi Sinergi | Admin Produksi &amp; Payroll | Mar 2026 - Jul 2026</p>
-        <div class="two-col">
-          <dl>
-            <dt>Konteks</dt><dd>Data operasional dump truck harian menjadi dasar laporan produksi dan payroll.</dd>
-            <dt>Tindakan</dt><dd>Memvalidasi HM, ritase, unit, dan kehadiran serta menyusun Daily Production Report dan estimasi pendapatan harian.</dd>
-            <dt>Hasil</dt><dd>Laporan produksi dan payroll disusun dari data yang sudah divalidasi.</dd>
-          </dl>
-          <div>
+        <article class="card">
+          <h3>3. Rekonsiliasi data produksi hauling untuk payroll dan laporan</h3>
+          <p class="meta">PT Bintang Multi Sinergi | Admin Produksi &amp; Payroll | Mar 2026 - Jul 2026</p>
+          <div class="two-col">
+            <dl>
+              <dt>Konteks</dt><dd>Data operasional dump truck harian menjadi dasar laporan produksi dan payroll.</dd>
+              <dt>Tindakan</dt><dd>Memvalidasi HM, ritase, unit, dan kehadiran serta menyusun Daily Production Report dan estimasi pendapatan harian.</dd>
+              <dt>Hasil</dt><dd>Laporan produksi dan payroll disusun dari data yang sudah divalidasi.</dd>
+            </dl>
             <div class="tag-list">
-              <span class="tag">Microsoft Excel</span>
+              <span class="tag">Excel</span>
               <span class="tag">Data Validation</span>
-              <span class="tag">Daily Production Report</span>
+              <span class="tag">Reporting</span>
             </div>
           </div>
+        </article>
+      </section>
+
+      <section id="pengalaman">
+        <div class="section-head"><h2>Pengalaman Kerja</h2></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Admin Produksi &amp; Payroll</h3>
+            <div class="when">PT Bintang Multi Sinergi | Maret 2026 - Juli 2026</div>
+            <ul>
+              <li>Payroll berbasis kehadiran dan jam kerja.</li>
+              <li>Rekonsiliasi HM, ritase, dan unit; laporan produksi harian.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Admin Recruitment (Project-Based)</h3>
+            <div class="when">PT Irena Binajasa Abadikarya | Desember 2025 - Februari 2026</div>
+            <ul>
+              <li>Rekrutmen end-to-end, time-to-hire turun 33%.</li>
+              <li>Database kandidat, laporan rekrutmen, dan pipeline.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <h3>HR Administration &amp; General Affairs Support</h3>
+            <div class="when">PT Andalan Berjaya Nusantara, penempatan PT ANTAM Tbk UBPN Sulawesi Tenggara | Januari 2024 - Agustus 2025</div>
+            <ul>
+              <li>Payroll 133 karyawan, administrasi kontrak, database, dan personal file.</li>
+              <li>Billing validation dari timesheet dan job order; general affairs di site.</li>
+            </ul>
+          </div>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <section id="pengalaman">
-      <div class="section-head"><h2>Pengalaman Kerja</h2></div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Admin Produksi &amp; Payroll</h3>
-          <div class="when">PT Bintang Multi Sinergi | Maret 2026 - Juli 2026</div>
-          <ul>
-            <li>Payroll berbasis kehadiran dan jam kerja.</li>
-            <li>Rekonsiliasi HM, ritase, dan unit; laporan produksi harian.</li>
-          </ul>
+      <section id="keahlian">
+        <div class="section-head"><h2>Keahlian</h2></div>
+
+        <div class="skill-group">
+          <b>Human Resources</b>
+          <div class="tag-list">
+            <span class="tag">Payroll Processing</span>
+            <span class="tag">Recruitment &amp; Selection</span>
+            <span class="tag">Onboarding</span>
+            <span class="tag">HR Administration</span>
+            <span class="tag">Employee Database</span>
+            <span class="tag">Attendance Management</span>
+            <span class="tag">Document Control</span>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <h3>Admin Recruitment (Project-Based)</h3>
-          <div class="when">PT Irena Binajasa Abadikarya | Desember 2025 - Februari 2026</div>
-          <ul>
-            <li>Rekrutmen end-to-end, time-to-hire turun 33%.</li>
-            <li>Database kandidat, laporan rekrutmen, dan pipeline.</li>
-          </ul>
+        <div class="skill-group">
+          <b>Operasional Pertambangan</b>
+          <div class="tag-list">
+            <span class="tag">Mining Operations Administration</span>
+            <span class="tag">Dump Truck Monitoring</span>
+            <span class="tag">HM &amp; Ritase Monitoring</span>
+            <span class="tag">Production &amp; Revenue Calculation</span>
+            <span class="tag">Billing Validation</span>
+          </div>
         </div>
 
-        <div class="timeline-item">
-          <h3>HR Administration &amp; General Affairs Support</h3>
-          <div class="when">PT Andalan Berjaya Nusantara, penempatan PT ANTAM Tbk UBPN Sulawesi Tenggara | Januari 2024 - Agustus 2025</div>
-          <ul>
-            <li>Payroll 133 karyawan, administrasi kontrak, database, dan personal file.</li>
-            <li>Billing validation dari timesheet dan job order; general affairs di site.</li>
-          </ul>
+        <div class="skill-group">
+          <b>Data &amp; Alat</b>
+          <div class="tag-list">
+            <span class="tag">Microsoft Excel (Pivot Table, VLOOKUP, IF)</span>
+            <span class="tag">Data Validation</span>
+            <span class="tag">HR Reporting</span>
+            <span class="tag">Word</span>
+            <span class="tag">PowerPoint</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="keahlian">
-      <div class="section-head"><h2>Keahlian</h2></div>
-      <div class="skill-group">
-        <b>Human Resources</b>
-        <div class="tag-list">
-          <span class="tag">Payroll Processing</span>
-          <span class="tag">Recruitment &amp; Selection</span>
-          <span class="tag">Onboarding</span>
-          <span class="tag">HR Administration</span>
-          <span class="tag">Employee Database</span>
-          <span class="tag">Attendance Management</span>
-          <span class="tag">Document Control</span>
+      <section id="sertifikasi">
+        <div class="section-head"><h2>Pendidikan &amp; Sertifikasi</h2></div>
+        <div class="card">
+          <h3>Sarjana Ekonomi (S.E.), Ekonomi Islam</h3>
+          <p class="meta">UIN Alauddin Makassar | Lulus 2023</p>
         </div>
-      </div>
 
-      <div class="skill-group">
-        <b>Operasional Pertambangan</b>
-        <div class="tag-list">
-          <span class="tag">Mining Operations Administration</span>
-          <span class="tag">Dump Truck Monitoring</span>
-          <span class="tag">HM &amp; Ritase Monitoring</span>
-          <span class="tag">Production &amp; Revenue Calculation</span>
-          <span class="tag">Billing Validation</span>
+        <h3 style="margin:18px 0 10px; color:var(--primary);">Sertifikat (ketuk untuk memperbesar)</h3>
+        <div class="certs">
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Human Resources: Payroll"><img src="sertifikat-payroll.jpg" alt="Sertifikat Human Resources: Payroll" loading="lazy" /></button>
+            <figcaption>
+              <b>Human Resources: Payroll</b>
+              <span>LinkedIn Learning | 14 Mar 2026 | 34 menit</span>
+              <em>Diakui SHRM (0,75 PDC) dan HRCI (0,50 kredit)</em>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Excel: VLOOKUP dan XLOOKUP untuk Pemula"><img src="sertifikat-excel-vlookup-xlookup.jpg" alt="Sertifikat Excel: VLOOKUP dan XLOOKUP untuk Pemula" loading="lazy" /></button>
+            <figcaption>
+              <b>Excel: VLOOKUP dan XLOOKUP untuk Pemula</b>
+              <span>LinkedIn Learning | 12 Mar 2026 | 19 menit</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Excel: PivotTables untuk Pemula"><img src="sertifikat-excel-pivottable.jpg" alt="Sertifikat Excel: PivotTables untuk Pemula" loading="lazy" /></button>
+            <figcaption>
+              <b>Excel: PivotTables untuk Pemula</b>
+              <span>LinkedIn Learning | 26 Mar 2026 | 23 menit</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Compensation and Benefits Fundamental"><img src="sertifikat-compensation-benefits.jpg" alt="Sertifikat Compensation and Benefits Fundamental" loading="lazy" /></button>
+            <figcaption>
+              <b>Compensation and Benefits Fundamental</b>
+              <span>MySkill | 25 Apr 2026 | 1 jam</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Talent Acquisition"><img src="sertifikat-talent-acquisition.jpg" alt="Sertifikat Talent Acquisition" loading="lazy" /></button>
+            <figcaption>
+              <b>Talent Acquisition</b>
+              <span>MySkill | 7 Mei 2026 | 1 jam</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat SQL Introduction for Data Analysis"><img src="sertifikat-sql.jpg" alt="Sertifikat SQL Introduction for Data Analysis" loading="lazy" /></button>
+            <figcaption>
+              <b>SQL Introduction for Data Analysis</b>
+              <span>MySkill Short Class | 1 Apr 2026</span>
+            </figcaption>
+          </figure>
+
+          <figure class="cert">
+            <button type="button" aria-label="Perbesar sertifikat Event Online - Human Resources"><img src="sertifikat-dibimbing-hr-event.jpg" alt="Sertifikat Event Online - Human Resources" loading="lazy" /></button>
+            <figcaption>
+              <b>Event Online - Human Resources</b>
+              <span>Dibimbing | 31 Mar 2026</span>
+              <em>Sertifikat partisipasi</em>
+            </figcaption>
+          </figure>
         </div>
-      </div>
 
-      <div class="skill-group">
-        <b>Data &amp; Alat</b>
-        <div class="tag-list">
-          <span class="tag">Microsoft Excel (Pivot Table, VLOOKUP, IF)</span>
-          <span class="tag">Data Validation</span>
-          <span class="tag">HR Reporting</span>
-          <span class="tag">Word</span>
-          <span class="tag">PowerPoint</span>
+        <div class="cta-box">
+          <h3>Dokumen pendukung</h3>
+          <p>Semua sertifikat dapat diunduh dalam satu file PDF untuk kebutuhan recruiter.</p>
+          <a class="btn primary" href="Lampiran_Sertifikat_Muhammad_Sengaji_Aswar.pdf" target="_blank" rel="noopener">Unduh Semua Sertifikat</a>
         </div>
-      </div>
-    </section>
 
-    <section id="sertifikasi">
-      <div class="section-head"><h2>Pendidikan &amp; Sertifikasi</h2></div>
-      <div class="card">
-        <h3>Sarjana Ekonomi (S.E.), Ekonomi Islam</h3>
-        <p class="meta">UIN Alauddin Makassar | Lulus 2023</p>
-      </div>
+        <p class="light" style="margin-top:16px;">
+          Pelatihan lain (sertifikat belum dilampirkan): HR Foundations: Core Human Resources - LinkedIn Learning (Mar 2026, 54 menit); Excel &amp; AI for Administration (Mar 2026, 43 menit).
+        </p>
+      </section>
 
-      <h3 style="margin:18px 0 10px; color:var(--primary);">Sertifikat (ketuk untuk memperbesar)</h3>
-      <div class="certs">
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Human Resources: Payroll"><img src="sertifikat-payroll.jpg" alt="Sertifikat Human Resources: Payroll" loading="lazy"></button>
-          <figcaption>
-            <b>Human Resources: Payroll</b>
-            <span>LinkedIn Learning | 14 Mar 2026 | 34 menit</span>
-            <em>Diakui SHRM (0,75 PDC) dan HRCI (0,50 kredit)</em>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Excel: VLOOKUP dan XLOOKUP untuk Pemula"><img src="sertifikat-excel-vlookup-xlookup.jpg" alt="Sertifikat Excel: VLOOKUP dan XLOOKUP untuk Pemula" loading="lazy"></button>
-          <figcaption>
-            <b>Excel: VLOOKUP dan XLOOKUP untuk Pemula</b>
-            <span>LinkedIn Learning | 12 Mar 2026 | 19 menit</span>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Excel: PivotTables untuk Pemula"><img src="sertifikat-excel-pivottable.jpg" alt="Sertifikat Excel: PivotTables untuk Pemula" loading="lazy"></button>
-          <figcaption>
-            <b>Excel: PivotTables untuk Pemula</b>
-            <span>LinkedIn Learning | 26 Mar 2026 | 23 menit</span>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Compensation and Benefits Fundamental"><img src="sertifikat-compensation-benefits.jpg" alt="Sertifikat Compensation and Benefits Fundamental" loading="lazy"></button>
-          <figcaption>
-            <b>Compensation and Benefits Fundamental</b>
-            <span>MySkill | 25 Apr 2026 | 1 jam</span>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Talent Acquisition"><img src="sertifikat-talent-acquisition.jpg" alt="Sertifikat Talent Acquisition" loading="lazy"></button>
-          <figcaption>
-            <b>Talent Acquisition</b>
-            <span>MySkill | 7 Mei 2026 | 1 jam</span>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat SQL Introduction for Data Analysis"><img src="sertifikat-sql.jpg" alt="Sertifikat SQL Introduction for Data Analysis" loading="lazy"></button>
-          <figcaption>
-            <b>SQL Introduction for Data Analysis</b>
-            <span>MySkill Short Class | 1 Apr 2026</span>
-          </figcaption>
-        </figure>
-
-        <figure class="cert">
-          <button type="button" aria-label="Perbesar sertifikat Event Online - Human Resources"><img src="sertifikat-dibimbing-hr-event.jpg" alt="Sertifikat Event Online - Human Resources" loading="lazy"></button>
-          <figcaption>
-            <b>Event Online - Human Resources</b>
-            <span>Dibimbing | 31 Mar 2026</span>
-            <em>Sertifikat partisipasi</em>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="cta-box">
-        <h3>Dokumen pendukung</h3>
-        <p>Semua sertifikat dapat diunduh dalam satu file PDF untuk kebutuhan recruiter.</p>
-        <a class="btn primary" href="Lampiran_Sertifikat_Muhammad_Sengaji_Aswar.pdf" download="Lampiran_Sertifikat_Muhammad_Sengaji_Aswar.pdf" target="_blank" rel="noopener">Unduh Semua Sertifikat (PDF)</a>
-      </div>
-
-      <p class="light" style="margin-top:16px;">Pelatihan lain (sertifikat belum dilampirkan): HR Foundations: Core Human Resources - LinkedIn Learning (Mar 2026, 54 menit); Excel &amp; AI for Administration HR - Jobstreet; Data Analytics Fundamentals - Digital Talent Scholarship; Organization Design &amp; Goal Setting - MySkill.</p>
-    </section>
-
-    <section id="kontak">
-      <div class="section-head"><h2>Hubungi Saya</h2></div>
-      <div class="card">
-        <p style="margin:0 0 14px; color:var(--ink);">Terbuka untuk peran HR Officer, Payroll Officer, Recruitment Officer, atau HRGA di perusahaan pertambangan nikel dan penempatan di seluruh Indonesia.</p>
-        <div class="btn-group">
-          <a class="btn primary" href="https://wa.me/6281342307699" target="_blank" rel="noopener">WhatsApp 0813-4230-7699</a>
-          <a class="btn secondary" href="mailto:muhammadsengaji.a@gmail.com">muhammadsengaji.a@gmail.com</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/muhammad-sengaji-aswar" target="_blank" rel="noopener">LinkedIn</a>
+      <section id="kontak">
+        <div class="section-head"><h2>Hubungi Saya</h2></div>
+        <div class="card">
+          <p style="margin:0 0 14px; color:var(--ink);">
+            Terbuka untuk peran HR Officer, Payroll Officer, Recruitment Officer, atau HRGA di perusahaan pertambangan nikel dan penempatan di seluruh Indonesia.
+          </p>
+          <div class="btn-group">
+            <a class="btn primary" href="https://wa.me/6281342307699" target="_blank" rel="noopener">WhatsApp 0813-4230-7699</a>
+            <a class="btn secondary" href="mailto:muhammadsengaji.a@gmail.com">muhammadsengaji.a@gmail.com</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/muhammad-sengaji-aswar" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="wrap">Kab. Morowali, Sulawesi Tengah | Muhammad Sengaji Aswar, S.E.</div>
-  </footer>
+    <footer class="footer">
+      <div class="wrap">Kab. Morowali, Sulawesi Tengah | Muhammad Sengaji Aswar, S.E.</div>
+    </footer>
 
-  <div id="lightbox" aria-label="Pratinjau sertifikat" role="dialog">
-    <img alt="" src="">
-  </div>
+    <div id="lightbox" aria-label="Pratinjau sertifikat" role="dialog">
+      <img alt="" src="" />
+    </div>
 
-  <script>
-    (function () {
-      var lb = document.getElementById('lightbox');
-      var img = lb.querySelector('img');
-      var certButtons = document.querySelectorAll('.cert button');
+    <script>
+      (function () {
+        var lb = document.getElementById('lightbox');
+        var img = lb.querySelector('img');
+        var certButtons = document.querySelectorAll('.cert button');
 
-      certButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-          var source = button.querySelector('img');
-          if (!source) return;
-          img.src = source.src;
-          img.alt = source.alt || 'Sertifikat';
-          lb.classList.add('show');
+        certButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var source = button.querySelector('img');
+            if (!source) return;
+            img.src = source.src;
+            img.alt = source.alt || 'Sertifikat';
+            lb.classList.add('show');
+          });
         });
-      });
 
-      lb.addEventListener('click', function () {
-        lb.classList.remove('show');
-        img.src = '';
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
+        lb.addEventListener('click', function () {
           lb.classList.remove('show');
           img.src = '';
-        }
-      });
+        });
 
-      document.querySelectorAll('a[download]').forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          var url = link.getAttribute('href');
-          if (!url || !url.toLowerCase().endsWith('.pdf')) return;
-          var isSameOrigin = /^https?:\/\//.test(url) ? false : true;
-          if (!isSameOrigin) return;
-          var newWindow = window.open(url, '_blank');
-          if (!newWindow) {
-            window.location.href = url;
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            lb.classList.remove('show');
+            img.src = '';
           }
         });
-      });
-    })();
-  </script>
-</body>
+
+        document.querySelectorAll('a[download]').forEach(function (link) {
+          link.addEventListener('click', function (event) {
+            var url = link.getAttribute('href');
+            if (!url || !url.toLowerCase().endsWith('.pdf')) return;
+            var isSameOrigin = /^https?:\/\//.test(url) ? false : true;
+            if (!isSameOrigin) return;
+            var newWindow = window.open(url, '_blank');
+            if (!newWindow) {
+              window.location.href = url;
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
