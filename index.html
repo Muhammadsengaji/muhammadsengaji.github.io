@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0c1b2a" />
+    <meta name="theme-color" content="#0d2033" />
     <title>Muhammad Sengaji Aswar | HR Officer Portfolio</title>
     <meta
       name="description"
-      content="Portfolio profesional Muhammad Sengaji Aswar, HR Officer dengan fokus payroll, recruitment, HR administration, dan operasional pertambangan."
+      content="Portfolio profesional Muhammad Sengaji Aswar, HR Officer dengan fokus payroll, recruitment, HR administration, dan operasional SDM di industri pertambangan."
     />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
 
       :root {
-        --bg: #f4efe9;
-        --bg-deep: #e8dfd4;
-        --surface: rgba(255,255,255,0.72);
+        --bg: #f5f1ea;
+        --bg-deep: #ece0d0;
+        --surface: rgba(255,255,255,0.7);
         --surface-strong: #fffdf9;
         --panel: #ffffff;
-        --ink: #152534;
-        --muted: #5d6f7e;
-        --line: rgba(18, 38, 56, 0.1);
-        --primary: #0f2133;
-        --primary-soft: #16324a;
-        --accent: #cba36a;
-        --accent-strong: #b48b4d;
-        --accent-soft: #f1e4cf;
-        --success: #1d6c48;
-        --shadow: 0 24px 60px rgba(15, 33, 51, 0.12);
+        --ink: #162a3a;
+        --muted: #5b6c7a;
+        --line: rgba(16, 35, 49, 0.09);
+        --primary: #0d2033;
+        --primary-soft: #16354d;
+        --accent: #c49a67;
+        --accent-strong: #a77e46;
+        --accent-soft: #f2e8d8;
+        --success: #1d6d48;
+        --shadow: 0 28px 70px rgba(12, 32, 51, 0.12);
         --radius-xl: 30px;
         --radius-lg: 22px;
-        --radius-md: 16px;
+        --radius-md: 14px;
         --max: 1180px;
       }
 
@@ -40,9 +40,9 @@
         margin: 0;
         font-family: 'Manrope', 'Segoe UI', sans-serif;
         background:
-          radial-gradient(circle at top left, rgba(203,163,106,0.18), transparent 28%),
-          radial-gradient(circle at bottom right, rgba(22,50,74,0.12), transparent 34%),
-          linear-gradient(180deg, var(--bg) 0%, #f8f5f1 100%);
+          radial-gradient(circle at top left, rgba(196,154,103,0.16), transparent 26%),
+          radial-gradient(circle at bottom right, rgba(22,53,77,0.12), transparent 28%),
+          linear-gradient(180deg, var(--bg) 0%, #faf7f3 100%);
         color: var(--ink);
         line-height: 1.7;
       }
@@ -51,50 +51,45 @@
       a { color: inherit; text-decoration: none; }
       p { margin: 0; }
       ul { margin: 0; padding-left: 1.1rem; }
-      .wrap {
-        max-width: var(--max);
-        margin-inline: auto;
-        padding-inline: 22px;
-      }
+      .wrap { max-width: var(--max); margin-inline: auto; padding-inline: 22px; }
 
       .topbar {
         position: sticky;
         top: 0;
-        z-index: 20;
-        backdrop-filter: blur(16px);
-        background: rgba(244, 239, 233, 0.72);
-        border-bottom: 1px solid rgba(17, 35, 51, 0.08);
+        z-index: 50;
+        backdrop-filter: blur(18px);
+        background: rgba(245, 241, 234, 0.72);
+        border-bottom: 1px solid rgba(16, 35, 49, 0.07);
       }
 
       .topbar-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 76px;
-        gap: 18px;
+        min-height: 78px;
+        gap: 20px;
       }
 
       .brand {
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        font-weight: 800;
+        font-size: 0.76rem;
         letter-spacing: 0.12em;
         text-transform: uppercase;
+        font-weight: 800;
         color: var(--primary);
-        font-size: 0.76rem;
       }
 
       .brand-mark {
-        width: 36px;
-        height: 36px;
+        width: 38px;
+        height: 38px;
         border-radius: 50%;
         display: inline-grid;
         place-items: center;
-        background: linear-gradient(135deg, var(--primary) 0%, var(--accent-strong) 100%);
-        color: #fff;
-        font-size: 0.9rem;
-        box-shadow: 0 12px 28px rgba(15,33,51,0.18);
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        color: white;
+        box-shadow: 0 12px 28px rgba(13, 32, 51, 0.18);
       }
 
       .nav {
@@ -106,11 +101,11 @@
 
       .nav a {
         position: relative;
-        font-size: 0.78rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
         color: var(--muted);
+        font-size: 0.77rem;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
         transition: color 0.2s ease;
       }
 
@@ -130,14 +125,12 @@
       .nav a:hover { color: var(--primary); }
       .nav a:hover::after { transform: scaleX(1); }
 
-      .hero {
-        padding: 56px 0 26px;
-      }
+      .hero { padding: 64px 0 28px; }
 
       .hero-grid {
         display: grid;
         grid-template-columns: 1.3fr 0.95fr;
-        gap: 32px;
+        gap: 30px;
         align-items: center;
       }
 
@@ -145,19 +138,16 @@
         display: inline-block;
         padding: 9px 16px;
         border-radius: 999px;
-        background: rgba(203,163,106,0.12);
+        background: rgba(196,154,103,0.12);
+        border: 1px solid rgba(196,154,103,0.2);
         color: var(--primary-soft);
-        border: 1px solid rgba(203,163,106,0.2);
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         font-weight: 800;
         letter-spacing: 0.12em;
         text-transform: uppercase;
       }
 
-      h1, h2, h3, h4 {
-        font-family: 'Playfair Display', Georgia, serif;
-        letter-spacing: -0.04em;
-      }
+      h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.04em; }
 
       .hero h1 {
         margin: 18px 0 14px;
@@ -168,15 +158,15 @@
 
       .lead {
         max-width: 62ch;
-        color: var(--muted);
         font-size: 1.08rem;
+        color: var(--muted);
       }
 
       .hero-actions {
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
-        margin-top: 26px;
+        margin-top: 28px;
       }
 
       .btn {
@@ -192,26 +182,24 @@
         transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       }
 
-      .btn:hover {
-        transform: translateY(-2px);
-      }
+      .btn:hover { transform: translateY(-2px); }
 
       .btn-primary {
-        background: linear-gradient(135deg, var(--primary) 0%, #1d3d5f 100%);
+        background: linear-gradient(135deg, var(--primary) 0%, #1a405f 100%);
         color: white;
-        box-shadow: 0 18px 32px rgba(15,33,51,0.18);
+        box-shadow: 0 18px 30px rgba(13, 32, 51, 0.18);
       }
 
       .btn-secondary {
-        background: rgba(255,255,255,0.65);
-        border-color: rgba(15,33,51,0.12);
+        background: rgba(255,255,255,0.6);
         color: var(--primary);
+        border-color: rgba(16, 35, 49, 0.1);
       }
 
       .hero-panel {
         position: relative;
-        background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(248, 244, 240, 0.9));
-        border: 1px solid rgba(21, 37, 52, 0.08);
+        background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(249,245,240,0.9));
+        border: 1px solid rgba(16,35,49,0.08);
         border-radius: var(--radius-xl);
         padding: 24px;
         box-shadow: var(--shadow);
@@ -224,7 +212,7 @@
         width: 110px;
         height: 110px;
         border-radius: 28px;
-        background: linear-gradient(135deg, rgba(203,163,106,0.18), rgba(255,255,255,0));
+        background: linear-gradient(135deg, rgba(196,154,103,0.15), rgba(255,255,255,0));
         filter: blur(10px);
       }
 
@@ -235,11 +223,12 @@
         gap: 8px;
         padding: 8px 12px;
         border-radius: 999px;
-        background: rgba(203,163,106,0.12);
+        background: rgba(196,154,103,0.12);
+        border: 1px solid rgba(196,154,103,0.22);
         color: var(--primary-soft);
         font-size: 0.72rem;
-        font-weight: 800;
         letter-spacing: 0.08em;
+        font-weight: 800;
         text-transform: uppercase;
       }
 
@@ -252,8 +241,8 @@
       }
 
       .stat-box {
-        background: rgba(255,255,255,0.72);
-        border: 1px solid rgba(21,37,52,0.08);
+        background: rgba(255,255,255,0.74);
+        border: 1px solid rgba(16,35,49,0.08);
         border-radius: 18px;
         padding: 18px 16px;
         box-shadow: 0 12px 28px rgba(17,39,49,0.04);
@@ -263,8 +252,8 @@
         display: block;
         color: var(--primary);
         font-size: clamp(1.7rem, 2vw, 2.35rem);
-        line-height: 1.08;
         margin-bottom: 5px;
+        line-height: 1.08;
       }
 
       .stat-box span {
@@ -273,10 +262,7 @@
       }
 
       main { padding-bottom: 60px; }
-
-      section {
-        padding-top: 42px;
-      }
+      section { padding-top: 42px; }
 
       .section-head {
         display: flex;
@@ -284,19 +270,19 @@
         justify-content: space-between;
         gap: 12px;
         margin-bottom: 18px;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
         border-bottom: 1px solid var(--line);
       }
 
       .section-head h2 {
         margin: 0;
-        font-size: clamp(2rem, 2.8vw, 3rem);
         color: var(--primary);
+        font-size: clamp(2rem, 2.8vw, 3rem);
       }
 
       .kicker {
         color: var(--accent-strong);
-        font-size: 0.7rem;
+        font-size: 0.72rem;
         letter-spacing: 0.14em;
         text-transform: uppercase;
         font-weight: 800;
@@ -305,20 +291,21 @@
       .about-grid {
         display: grid;
         grid-template-columns: 1.15fr 0.85fr;
-        gap: 24px;
+        gap: 22px;
       }
 
       .feature-card,
+      .profile-card,
       .case-card,
-      .timeline-card,
       .skill-card,
+      .timeline-card,
+      .contact-card,
       .cert-card,
-      .contact-card {
+      .metric-box {
         background: rgba(255,255,255,0.7);
-        border: 1px solid rgba(18,38,56,0.08);
+        border: 1px solid rgba(16,35,49,0.08);
         border-radius: var(--radius-lg);
         box-shadow: 0 12px 30px rgba(16,28,35,0.05);
-        overflow: hidden;
       }
 
       .feature-card {
@@ -330,42 +317,37 @@
         font-size: 1rem;
       }
 
-      .feature-card p + p { margin-top: 16px; }
+      .feature-card p + p { margin-top: 14px; }
 
-      .profile-card {
-        padding: 24px;
-      }
+      .profile-card { padding: 24px; }
 
       .profile-card .label {
         display: inline-block;
-        background: rgba(15,33,51,0.04);
+        background: rgba(13,32,51,0.04);
         color: var(--primary);
+        padding: 8px 12px;
+        border-radius: 999px;
         font-size: 0.72rem;
         letter-spacing: 0.12em;
         text-transform: uppercase;
         font-weight: 800;
-        padding: 8px 12px;
-        border-radius: 999px;
       }
 
-      .profile-list {
-        space-y: 0;
-        margin-top: 18px;
-      }
+      .profile-list { margin-top: 18px; }
 
       .profile-item {
         display: grid;
         grid-template-columns: 118px 1fr;
         gap: 8px 16px;
         padding: 12px 0;
-        border-top: 1px solid rgba(21,37,52,0.08);
+        border-top: 1px solid rgba(16,35,49,0.08);
       }
 
       .profile-item:first-child { border-top: none; }
 
       .profile-item dt {
         color: var(--accent-strong);
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         font-weight: 800;
@@ -385,10 +367,6 @@
 
       .metric-box {
         padding: 26px 20px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.94));
-        border: 1px solid rgba(21,37,52,0.08);
-        border-radius: 20px;
-        box-shadow: 0 12px 30px rgba(14,31,44,0.05);
         transform: translateY(0);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
@@ -399,25 +377,20 @@
       .skill-card:hover,
       .timeline-card:hover {
         transform: translateY(-4px);
-        box-shadow: 0 20px 36px rgba(16,28,35,0.07);
+        box-shadow: 0 20px 38px rgba(16,28,35,0.08);
       }
 
       .metric-box b {
         display: block;
-        font-size: clamp(2rem, 3vw, 3rem);
         color: var(--primary);
         line-height: 1;
+        font-size: clamp(2rem, 3vw, 3rem);
         margin-bottom: 8px;
       }
 
-      .metric-box span {
-        color: var(--muted);
-      }
+      .metric-box span { color: var(--muted); }
 
-      .cases-grid {
-        display: grid;
-        gap: 18px;
-      }
+      .cases-grid { display: grid; gap: 18px; }
 
       .case-card {
         padding: 22px 22px 18px;
@@ -442,38 +415,18 @@
       .company {
         color: var(--muted);
         font-size: 0.86rem;
-        margin-bottom: 10px;
-      }
-
-      .tag-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        border: 1px solid rgba(203,163,106,0.2);
-        color: var(--primary-soft);
-        font-size: 0.72rem;
-        font-weight: 800;
-        letter-spacing: 0.03em;
       }
 
       .case-body {
         display: grid;
         grid-template-columns: 1.3fr 0.7fr;
         gap: 18px;
-        margin-top: 14px;
+        margin-top: 12px;
       }
 
       .case-dl {
         display: grid;
-        grid-template-columns: 90px 1fr;
+        grid-template-columns: 94px 1fr;
         gap: 10px 16px;
       }
 
@@ -488,6 +441,24 @@
       .case-dl dd {
         margin: 0;
         color: var(--ink);
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        border: 1px solid rgba(196,154,103,0.22);
+        color: var(--primary-soft);
+        font-size: 0.72rem;
+        font-weight: 800;
       }
 
       .experience-grid {
@@ -509,13 +480,14 @@
         top: 0;
         bottom: 0;
         width: 2px;
-        background: linear-gradient(180deg, rgba(203,163,106,0.6), rgba(15,33,51,0.12));
+        background: linear-gradient(180deg, rgba(196,154,103,0.7), rgba(13,32,51,0.12));
       }
 
       .timeline-card {
         position: relative;
-        padding: 20px 18px 18px 18px;
+        padding: 20px 18px 18px;
         margin-bottom: 18px;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
 
       .timeline-card::before {
@@ -532,7 +504,7 @@
 
       .timeline-card h3 {
         margin: 0 0 8px;
-        font-size: 1.5rem;
+        font-size: 1.54rem;
         color: var(--primary);
       }
 
@@ -573,8 +545,8 @@
       }
 
       .skill-list span {
-        background: rgba(22,50,74,0.04);
-        border: 1px solid rgba(21,37,52,0.08);
+        background: rgba(13,32,51,0.04);
+        border: 1px solid rgba(16,35,49,0.08);
         color: var(--ink);
         padding: 8px 10px;
         border-radius: 10px;
@@ -589,6 +561,7 @@
       }
 
       .cert-card {
+        overflow: hidden;
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
 
@@ -614,7 +587,7 @@
       .cert-body b {
         display: block;
         color: var(--primary);
-        font-size: 1.04rem;
+        font-size: 1.02rem;
         margin-bottom: 6px;
       }
 
@@ -634,9 +607,9 @@
       }
 
       .cta-panel {
-        margin-top: 22px;
+        margin-top: 24px;
         padding: 26px 24px;
-        background: linear-gradient(135deg, #0f2133 0%, #183d59 100%);
+        background: linear-gradient(135deg, #0d2033 0%, #173d59 100%);
         border-radius: var(--radius-lg);
         color: #edf6ff;
         display: flex;
@@ -648,7 +621,7 @@
       .cta-panel h3 {
         margin: 0 0 8px;
         color: white;
-        font-size: clamp(1.6rem, 2vw, 2.2rem);
+        font-size: clamp(1.65rem, 2vw, 2.3rem);
       }
 
       .cta-panel p {
@@ -660,8 +633,8 @@
       }
 
       .contact-card p {
-        font-size: 1rem;
         color: var(--muted);
+        font-size: 1rem;
       }
 
       .contact-actions {
@@ -672,7 +645,7 @@
       }
 
       footer {
-        padding: 30px 0 50px;
+        padding: 34px 0 54px;
         text-align: center;
         color: var(--muted);
       }
@@ -683,7 +656,7 @@
         display: none;
         place-items: center;
         background: rgba(8, 14, 20, 0.72);
-        z-index: 100;
+        z-index: 200;
         padding: 24px;
         cursor: zoom-out;
       }
@@ -702,7 +675,7 @@
       .reveal {
         opacity: 0;
         transform: translateY(22px);
-        transition: opacity 0.65s ease, transform 0.65s ease;
+        transition: opacity 0.7s ease, transform 0.7s ease;
       }
 
       .reveal.visible {
@@ -720,9 +693,7 @@
           grid-template-columns: 1fr;
         }
 
-        .metrics-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
+        .metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       }
 
       @media (max-width: 720px) {
@@ -732,9 +703,7 @@
           padding: 14px 0 16px;
         }
 
-        .nav {
-          justify-content: center;
-        }
+        .nav { justify-content: center; }
 
         .metrics-grid,
         .stats-grid {
@@ -764,6 +733,7 @@
           <span class="brand-mark">MS</span>
           <span>M. Sengaji Aswar</span>
         </div>
+
         <nav class="nav" aria-label="Main navigation">
           <a href="#about">Tentang</a>
           <a href="#impact">Impact</a>
@@ -779,12 +749,13 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="reveal">
-            <span class="eyebrow">HR Officer | Mining Workforce</span>
+            <span class="eyebrow">HR Officer | Workforce Management</span>
             <h1>Muhammad Sengaji Aswar, S.E.</h1>
             <p class="lead">
-              HR professional dengan fokus pada payroll, rekrutmen, administrasi HR, dan efisiensi proses operasional di industri pertambangan.
-              Saya membantu perusahaan menjaga kelancaran SDM, validasi data, serta mendukung kebutuhan bisnis dengan pendekatan yang rapi, terukur, dan berorientasi pada hasil.
+              HR professional dengan fokus pada payroll, rekrutmen, administrasi SDM, dan efisiensi operasional di lingkungan kerja yang dinamis.
+              Saya membantu perusahaan menjaga kelancaran proses HR, validasi data, serta mendukung kebutuhan bisnis dengan pendekatan yang rapi, terukur, dan berorientasi pada hasil.
             </p>
+
             <div class="hero-actions">
               <a class="btn btn-primary" href="CV_Muhammad_Sengaji_Aswar.pdf" target="_blank" rel="noopener">Unduh CV</a>
               <a class="btn btn-secondary" href="https://wa.me/6281342307699" target="_blank" rel="noopener">WhatsApp</a>
@@ -794,7 +765,7 @@
           </div>
 
           <aside class="hero-panel reveal" aria-label="Profil singkat">
-            <span class="panel-tag">Profil Singkat</span>
+            <span class="panel-tag">Profile Snapshot</span>
             <div class="stats-grid">
               <div class="stat-box">
                 <strong>133</strong>
@@ -829,10 +800,10 @@
           <div class="about-grid">
             <div class="feature-card reveal">
               <p>
-                Saya adalah profesional HR dengan pengalaman dalam payroll, rekrutmen, administrasi SDM, dan dukungan operasional di lingkungan kerja yang dinamis, termasuk industri pertambangan nikel.
+                Saya adalah profesional HR dengan pengalaman dalam payroll, rekrutmen, administrasi SDM, dan dukungan operasional dalam lingkungan kerja yang dinamis, termasuk industri pertambangan nikel.
               </p>
               <p>
-                Saya percaya bahwa sistem yang rapi, data yang valid, dan komunikasi yang jelas adalah fondasi utama untuk menjaga performa tim, mendukung kebutuhan bisnis, serta menciptakan proses HR yang efektif dan terdokumentasi dengan baik.
+                Saya percaya bahwa proses HR yang terstruktur, data yang valid, dan komunikasi yang jelas adalah fondasi utama untuk menjaga performa tim, mendukung kebutuhan bisnis, serta menciptakan sistem kerja yang efektif dan bisa dipertanggungjawabkan.
               </p>
             </div>
 
@@ -849,7 +820,7 @@
                 </div>
                 <div class="profile-item">
                   <dt>Spesialis</dt>
-                  <dd>HR Officer, Recruitment, Payroll</dd>
+                  <dd>HR Officer, Payroll, Recruitment</dd>
                 </div>
                 <div class="profile-item">
                   <dt>Pendidikan</dt>
@@ -873,7 +844,7 @@
           <div class="metrics-grid reveal">
             <div class="metric-box">
               <b>133</b>
-              <span>karyawan dikelola dengan proses payroll yang teratur</span>
+              <span>karyawan dikelola dengan proses payroll yang terstruktur</span>
             </div>
             <div class="metric-box">
               <b>33%</b>
@@ -884,7 +855,7 @@
               <span>efisiensi proses payroll dan validasi data</span>
             </div>
             <div class="metric-box">
-              <b>20-50</b>
+              <b>20–50</b>
               <span>kandidat disaring setiap minggu secara konsisten</span>
             </div>
           </div>
@@ -940,7 +911,7 @@
                   <dt>Konteks</dt>
                   <dd>Proses rekrutmen end-to-end dengan kebutuhan manpower planning dan koordinasi user yang cepat.</dd>
                   <dt>Tindakan</dt>
-                  <dd>Menyaring 20–50 kandidat per minggu, mengelola recruitment tracker, serta mempercepat proses sourcing hingga onboarding.</dd>
+                  <dd>Menyaring 20–50 kandidat per minggu, mengelola recruitment tracker, serta mempercepat proses dari sourcing hingga onboarding.</dd>
                   <dt>Hasil</dt>
                   <dd>Time-to-hire turun 33%, dari 21 hari menjadi 14 hari.</dd>
                 </dl>
